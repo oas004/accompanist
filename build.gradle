@@ -92,7 +92,8 @@ subprojects {
             // Allow use of @OptIn
             freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
 
-            freeCompilerArgs += "-Xallow-jvm-ir-dependencies"
+            // FIXME figure out why this is needed
+            freeCompilerArgs += "-Xallow-unstable-dependencies"
         }
     }
 
